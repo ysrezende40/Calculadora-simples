@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+      <title>Document</title>
+      <link rel="stylesheet" href="estilo/css.css">
+</head>
+<body bgcolor="#FDFDBD">
+    <h1>calculadora</h1>
+    <form name="FormContas" action= " "  method="post"   >
+        <p>digite o primeiro número......:</p><input type="text" name="N_1"/><p></p>
+        <p>digite o segundo número......:</p><input type="text" name="N_2"/><p></p>
+        <input type="button" name="btn_exibirdados" value="exibirdados" onclick="exibecontas()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+
+
+       
+        
+    
+    
+    
+    
+    
+    
+    </form>
+    <script language="javascript" >
+        //definição das variaveis:
+        var js_n1
+        var js_n2
+        var js_soma
+        var js_subretacao
+        var js_divisao
+        var js_mut
+        
+      
+        
+        function exibecontas(){
+            /* Entrada de Dados */
+            js_n1 = parseInt(document.FormContas.N_1.value);
+            js_n2 = parseInt(document.FormContas.N_2.value);
+            /* Processamento de Dados */
+            js_soma = js_n1 + js_n2;
+            js_subretacao = js_n1 - js_n2;
+            js_divisao = js_n1 / js_n2;
+            js_mut = js_n1 * js_n2;
+            /* Saída de Dados */
+            window.alert('Resultado da Somatória = ' + js_soma)
+            window.alert('Resultado da Subtração = ' + js_subretacao)
+            window.alert('Resultado da divisao = ' + js_divisao)
+            window.alert('Resultado da mutiplicação = ' + js_mut)
+            document.write('<table border="1"><tr><td>soma</td></tr><tr><td>' + js_soma + '</td></tr></table>')
+            document.write('<table border="1"><tr><td>subtração</td></tr><tr><td>' + js_subretacao + '</td></tr></table>')
+            document.write('<table border="1"><tr><td>divisão</td></tr><tr><td>' + js_divisao + '</td></tr></table>')
+            document.write('<table border="1"><tr><td>mutiplicação</td></tr><tr><td>' + js_mut + '</td></tr></table>')
+            document.body.style.background = "#FDFDBD"
+            
+    }
+            
+         
+        
+
+        
+
+
+        
+
+    
+    </script>
+
+    <h2>ordem das operações</h2>
+
+
+    <ol>
+
+      <li>soma</li>
+      <li>subtração</li>
+      <li>divisão</li>
+      <li>mutiplicação</li>
+
+
+
+
+    </ol>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+        
+</body>
+ 
